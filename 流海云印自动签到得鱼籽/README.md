@@ -2,8 +2,8 @@
 相信对这篇帖子感兴趣的都是学校里面有流海云印这个共享打印机吧~
 众所周知，流海有一个签到功能，每天可以获得不等的鱼籽，最后这些鱼籽都可以进行订单抵扣，博主就一直手动签到，基本这几年，打印东西没充值过，哈哈哈。最近想的通过程序解决手动签到的麻烦，最后结合外网一些脚本优化了程序。
 本次分享仅做测试学习交流使用，请勿非法使用！
-文件夹下准备：pushplus_token.txt save_cookie.exe start_sign.exe
 
+文件夹下准备：pushplus_token.txt save_cookie.exe start_sign.exe
 ## 第一步：pushplus_token.txt 
 如没有请手动创建，文件里面输入一行信息，即是你的pushplus公众号发给你的token，不要多输入无关信息
 设置pushplus微信推送参考：https://www.pushplus.plus/push1.html
@@ -13,4 +13,3 @@
 ## 第三步：start_sign.exe 
 设置计划任务，放在服务器上，定时运行即可，每天一次即可！设置定时任务参考：https://blog.csdn.net/qq_43847263/article/details/111931598
 
-运行结果测试：
