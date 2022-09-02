@@ -13,3 +13,16 @@
 ## 第三步：start_sign.exe 
 设置计划任务，放在服务器上，定时运行即可，每天一次即可！设置定时任务参考：https://blog.csdn.net/qq_43847263/article/details/111931598
 
+### 补充：cookie.json
+里面的参数有：
+
+ID：手机号
+
+token:密码
+
+ua：UA标识
+
+school_id：学校代码
+
+第一次创建的cookie.json只需要你记住school_id参数即可，之后如果不想用save_cookie.exe更新token，那么可以用“token获取安卓版.apk”进行获取，最后编辑token文件替换旧token即可！
+
