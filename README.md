@@ -2,7 +2,7 @@
 <p align="center">
     <img src="https://www.python.org/static/img/python-logo.png" alt="Logo" >
   </a>
-  <h2 align="center" style="font-weight: 600">Python_scripts</h2>
+  <h2 align="center" style="font-weight: 600">Useful Python Scripts</h2>
   <p align="center">
     满满实用的科技活
     <br />
