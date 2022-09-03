@@ -4,5 +4,6 @@
 #### 3.支持批量添加账号，一次获取UID,打卡时不再需要登录；
 ## 仓库下包含：
 get_uid.py : 单独获取UID程序
+YXDM为学校代码，请查看https://yqfkapi.zhxy.net/api/School/GetList?LX=1
 
 daka.py : 打卡脚本
