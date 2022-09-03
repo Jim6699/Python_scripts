@@ -13,3 +13,6 @@ daka.py : 打卡脚本
     
     position：中文地址，可以参考你以前的打卡地点
     API接口获取 ：https://yqfkapi.zhxy.net/api/ClockIn/GetClockList?yxdm={学校代码}&UID={你的UID}&UserType=1
+    
+    push_key：Pushdeer密钥，一个便携消息推送器
+    下载地址|获取教程 ：https://www.pushdeer.com/official.html
