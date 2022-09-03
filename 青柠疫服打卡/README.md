@@ -6,5 +6,10 @@
 get_uid.py : 单独获取UID程序
 
 daka.py : 打卡脚本
+其中参数
 
-    其中YXDM为学校代码，请查看API接口获取： https://yqfkapi.zhxy.net/api/School/GetList?LX=1 
+    YXDM：学校代码
+    请查看API接口获取： https://yqfkapi.zhxy.net/api/School/GetList?LX=1 
+    
+    position：中文地址，可以参考你以前的打卡地点
+    API接口获取 ：https://yqfkapi.zhxy.net/api/ClockIn/GetClockList?yxdm={学校代码}&UID={你的UID}&UserType=1
