@@ -1,10 +1,9 @@
 ## 青柠疫服每日打卡
-#### <font color='red'> text </font>
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
 
-<a><img src="http://dump.thecybershadow.net/6c736bfd11ded8cdc5e2bda009a6694a/colortext.svg"/></a>
+```json
+   // 本脚本仅做代码交流学习使用，测试时请根据身体真实情况填写信息，请勿为疫情防控造成不必要的麻烦，否则法律责任自负！
+```
+
 
 ##### 1.纯requests版本，避免了selenium等方式容易出现故障情况；
 ##### 2.基于ddddocr免费的验证码识别系统，避免了百度ocr等接口错误率高，收费等弊端；
