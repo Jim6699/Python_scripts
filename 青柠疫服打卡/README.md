@@ -6,6 +6,9 @@
 get_uid.py : 单独获取UID程序
 
 daka.py : 打卡脚本
+
+青柠打卡账号.csv ： 需要打卡多账号按格式依次往下填写即可，英文逗号隔开stu_name,stu_uid,push_key,position（姓名,UID,Pushdeer密钥,中文地址）
+
 其中参数
 
     YXDM：学校代码
@@ -16,3 +19,4 @@ daka.py : 打卡脚本
     
     push_key：Pushdeer密钥，一个便携消息推送器
     下载地址|获取教程 ：https://www.pushdeer.com/official.html
+
