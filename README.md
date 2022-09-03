@@ -1,4 +1,3 @@
-# Python_scripts
-日常食用python所研发的一些小程序，仅做交流学习使用，请勿非法使用，转载请标明来处！
+# 📜 Python_scripts开源许可
+日常食用python所研发的一些项目，仅供个人学习研究使用，禁止用于商业及非法用途，转载请标明来处！
 
-我的CSDN主页：https://blog.csdn.net/aimersong69?type=blog
