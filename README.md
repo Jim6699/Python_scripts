@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="https://avatars.githubusercontent.com/u/81064597?s=48&v=4" alt="Logo" width="156" height="156" border-radius="50%">
+    <img src="https://avatars.githubusercontent.com/u/81064597?v=4" alt="Logo" width="156" height="156" border-radius="9">
   </a>
   <h2 align="center" style="font-weight: 600">Python_scripts</h2>
   <p align="center">
