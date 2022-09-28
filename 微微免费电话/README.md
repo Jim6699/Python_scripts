@@ -17,3 +17,7 @@
 1.qiandao.py 签到脚本
 
 2.recall.py 回拨脚本
+
+使用指南：
+
+账号信息的参数使用抓包工具抓包就行了，呼叫方式选择回拨，找到http://xcallback.uwewe.cn/callback.aspx查看即可
