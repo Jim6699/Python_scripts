@@ -5,8 +5,8 @@
 
 注意：使用下面代码必须正在刷题，才能查看到答案，否则直接输入tid无效，tid 是你自己正在刷题，服务器所知道的规则
 
-实现代码如下：
-
+python代码如下：
+(转载请标明出处)
 ``` python
 import requests
 import openpyxl
