@@ -1,85 +1,56 @@
-# h1 标题
-## h2 标题
-### h3 标题
-#### h4 标题
-##### h5 标题
-###### h6 标题
+## 批量下载牛客网在线测评答案
+##### 
 
 
-## 水平线
 
-___
-
----
-
-***
+``` python
+import requests
+import openpyxl
+from openpyxl import load_workbook
 
 
-## 文本样式
-
-**This is bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-
-
-## 列表
-
-无序
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
-
-有序
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-
-## 代码
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
+def write_excel(a,b):
+    wb = load_workbook(filename='牛客网.xlsx')
+    ws = wb.active
+    num = 1
+    while 1:
+        cell = ws.cell(row=num, column=1).value
+        if cell:
+            num = num +1
+        else:
+            row_num = num
+            break
+    ws.cell(row=row_num, column=1, value=str(a))
+    ws.cell(row=row_num, column=2, value=str(b))
+    wb.save('牛客网.xlsx')
+def get_answer(id):
+    url = "https://m.nowcoder.com/test/get-all-question?t=02436CC60E649584D5C4BBF57709E5CA&fm=android_app_2.21.3.3091&tid={}".format(id)
+    print(url)
+    headers = {
+        "cookie": "这里需要填写网站对应的cookie",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36"
+        }
+    html = requests.get(url=url,headers=headers)
+    json_response = html.json()
+    question_list = json_response['data']['allQuestion']
+    for question in question_list:
+        print("="*20)
+        print("题目：")
+        topic = question['question']['content']
+        print(topic)
+        print("答案：")
+        answer_list = question['question']['answer']
+        for answer_id in answer_list:
+            if answer_id["type"] == 1:
+                answer = answer_id["content"]
+                print(answer)
+        write_excel(topic,answer)
+        print("="*20)
+    print("写入完毕！")
+while True:
+    id = input("请输入刷题页面url里面的tid参数：") #tid的参数
+    get_answer(id)
 
 
-Block code "fences"
 
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
 ```
