@@ -10,7 +10,8 @@
 
 ## 第二步：save_cookie.exe
 点击运行，保存需要打卡的账号信息，可以多添加账号，只打卡一个账号添加账号后关闭软件即可！添加进去的账号一周有效，请于下周同一时候去重新打开这个软件更新账号信息，否则会打卡不上，详见pushplus给你的推送结果！同时文件夹下出现 cookie.json 文件，请勿删除！
-*请单独下载修复版：https://wwrm.lanzoub.com/iCS4u0kizpod
+
+*由于fake在部分人电脑存在错误，请下载修复版：https://wwrm.lanzoub.com/iCS4u0kizpod
 
 ## 第三步：start_sign.exe 
 设置计划任务，放在服务器上，定时运行即可，每天一次即可！设置定时任务参考：https://blog.csdn.net/qq_43847263/article/details/111931598
